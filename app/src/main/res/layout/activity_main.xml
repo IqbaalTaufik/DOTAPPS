@@ -127,7 +127,7 @@
                     android:layout_width="36dp"
                     android:layout_height="125dp"
                     android:layout_weight="1"
-                    android:background="@drawable/MMR" />
+                    android:background="@drawable/reng"/>
 
                 <Button
                     android:id="@+id/button5"
