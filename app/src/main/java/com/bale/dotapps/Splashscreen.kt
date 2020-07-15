@@ -1,4 +1,4 @@
-package com.example.dotapps
+package com.bale.dotapps
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,7 @@ class Splashscreen : AppCompatActivity() {
         setContentView(R.layout.activity_splashscreen)
         val handle = Handler()
         handle.postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,ItemsActivity::class.java)
             startActivity(intent)
             finish()
         },3000)

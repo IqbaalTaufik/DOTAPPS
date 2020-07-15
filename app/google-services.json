@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "151732303884",
+    "firebase_url": "https://dotapss.firebaseio.com",
+    "project_id": "dotapss",
+    "storage_bucket": "dotapss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151732303884:android:9489352a84e15509aa1629",
+        "android_client_info": {
+          "package_name": "com.bale.dotapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151732303884-j87rvd4vkmdt7s9q96i1i3hiqbvrb94c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bale.dotapps",
+            "certificate_hash": "0bbb534d61cf207d74c11ffcd92a497ff90b40ad"
+          }
+        },
+        {
+          "client_id": "151732303884-bukfkq1ijrn91ke8n0k5cl98tqk5ofph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVXsmBR7FNotr1bKfpqUQRH1Vpd2xYL_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151732303884-bukfkq1ijrn91ke8n0k5cl98tqk5ofph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

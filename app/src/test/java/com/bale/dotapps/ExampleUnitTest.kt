@@ -1,4 +1,4 @@
-package com.example.dotapps
+package com.bale.dotapps
 
 import org.junit.Test
 
