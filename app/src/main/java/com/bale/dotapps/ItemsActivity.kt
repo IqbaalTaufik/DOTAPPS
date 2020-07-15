@@ -34,6 +34,11 @@ class ItemsActivity : AppCompatActivity(),ItemAdapter.ItemClickListener {
         bottNav_main.setOnNavigationItemSelectedListener(bottomNavSelectedListener())
 
         getDataDariDatabase()
+
+
+        btn_addItem_itemsAct.setOnClickListener {
+            startActivity(Intent(this, AddItemActivity::class.java))
+        }
     }
 
     private fun getDataDariDatabase(){
@@ -76,6 +81,8 @@ class ItemsActivity : AppCompatActivity(),ItemAdapter.ItemClickListener {
         }
 
     override fun itemClickListener(itemModel: ItemModel, position: Int) {
-        TODO("Not yet implemented")
+        val intent = Intent(this, ItemDetailActivity::class.java)
+        intent.putExtra("ITEM_ID",itemModel.itemID)
+        startActivity(intent)
     }
 }

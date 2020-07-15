@@ -23,7 +23,9 @@ class ItemAdapter:RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
             tv_itemCost.text = itemModel.itemCost
             tv_itemName.text = itemModel.itemName
 
-            Picasso.get().load(itemModel.itemIcon).into(iv_itemIcon)
+            if(itemModel.itemIcon.isNotEmpty() || itemModel.itemIcon != ""){
+                Picasso.get().load(itemModel.itemIcon).into(iv_itemIcon)
+            }
 
             itemView.setOnClickListener {
                 clickListener.itemClickListener(itemModel,position)
