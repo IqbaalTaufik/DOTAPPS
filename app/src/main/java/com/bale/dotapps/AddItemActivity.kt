@@ -29,7 +29,7 @@ class AddItemActivity : AppCompatActivity() {
         //edittext
         val bonus = et_itemBonus.text.toString()
         val itemCost = et_itemCost.text.toString()
-        val itemEffect = et_itemEffect.toString()
+        val itemEffect = et_itemEffect.text.toString()
         val itemName = et_itemName.text.toString()
         val itemActiveName = et_itemActiveName.text.toString()
         val itemActiveDetail = et_itemActiveDetail.text.toString()
