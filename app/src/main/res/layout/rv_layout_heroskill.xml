@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_skillIcon_skillLayout"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+    <TextView
+        android:id="@+id/tv_skillName_skillLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Skill"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:minLines="2"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+</LinearLayout>

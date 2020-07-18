@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddItemActivity"></activity>
+        <activity android:name=".sementara.AddHeroSkillActivity"></activity>
+        <activity android:name=".HeroDetailActivity" />
+        <activity android:name=".sementara.AddHeroActivity" />
+        <activity android:name=".sementara.AddItemActivity" />
         <activity android:name=".ItemDetailActivity" />
         <activity
             android:name=".HeroActivity"
@@ -17,7 +20,7 @@
         <activity
             android:name=".TipsTrickActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".Splashscreen"></activity>
+        <activity android:name=".Splashscreen" />
         <activity
             android:name=".ItemsActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">

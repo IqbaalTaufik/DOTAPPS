@@ -1,7 +1,8 @@
-package com.bale.dotapps
+package com.bale.dotapps.sementara
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bale.dotapps.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase

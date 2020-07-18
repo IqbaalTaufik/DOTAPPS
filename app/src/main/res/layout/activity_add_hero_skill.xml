@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sementara.AddHeroSkillActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_skillName_addSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Skill"/>
+        <EditText
+            android:id="@+id/et_skillDesc_addSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Skill"/>
+        <EditText
+            android:id="@+id/et_skillStat_addSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stat Skill"/>
+        <EditText
+            android:id="@+id/et_skillIcon_addSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Copykeun Link Icon skillna kadieu"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tambah_addSkill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tambah"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
