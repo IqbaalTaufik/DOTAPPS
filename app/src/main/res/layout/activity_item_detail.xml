@@ -4,69 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/flatabu"
     tools:context=".ItemDetailActivity">
 
-    <TextView
-        android:id="@+id/tv_itemName_itemDetail"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_itemDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Spirit Vessel"
-        android:textSize="24sp"
-        android:textColor="#000"
-        android:textStyle="bold"
+        android:background="@color/flatabu"
+        android:elevation="4dp"
+        app:title="Item Detail"
+        app:titleTextColor="#fff"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <LinearLayout
         android:id="@+id/lin_header_itemDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_itemName_itemDetail">
-        <ImageView
-            android:id="@+id/iv_itemIcon_itemDetail"
-            android:layout_width="100dp"
-            android:layout_height="72dp"
-            android:background="#000"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/flatabu"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_itemDetail">
+
+        <TextView
+            android:id="@+id/tv_itemName_itemDetail"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="Spirit Vessel"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_itemName_itemDetail">
+            <ImageView
+                android:id="@+id/iv_itemIcon_itemDetail"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#000"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
+                android:orientation="vertical">
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:text="Effect:"
-                    android:textSize="13sp"/>
-                <TextView
-                    android:id="@+id/tv_itemEffect_itemDetail"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginStart="4dp"
+                        android:text="Effect:"
+                        android:textSize="13sp"
+                        android:textColor="#fff"/>
+                    <TextView
+                        android:id="@+id/tv_itemEffect_itemDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active Effect, Passive Effect"
+                        android:textSize="13sp"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Active Effect, Passive Effect"
-                    android:textSize="13sp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:text="Cost:"
-                    android:textSize="13sp"/>
-                <TextView
-                    android:id="@+id/tv_itemCost_itemDetail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2000"
-                    android:textSize="13sp"/>
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginStart="4dp"
+                        android:text="Cost:"
+                        android:textSize="13sp"
+                        android:textColor="#fff"/>
+                    <TextView
+                        android:id="@+id/tv_itemCost_itemDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000"
+                        android:textSize="13sp"
+                        android:textColor="#ffd300"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/lin_judulBody_itemDetail"
@@ -74,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@+id/lin_header_itemDetail">
         <TextView
             android:layout_width="wrap_content"
@@ -83,45 +119,64 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
         android:orientation="vertical"
+        android:background="@color/flatabu"
+        android:elevation="2dp"
+        android:padding="8dp"
         app:layout_constraintTop_toBottomOf="@+id/lin_judulBody_itemDetail">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
             android:text="Bonus:"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede"/>
         <TextView
             android:id="@+id/tv_itemBonus_itemDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Isi Bonus"/>
+            android:layout_marginTop="4dp"
+            android:text="Isi Bonus"
+            android:textColor="#fff"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Actvite: "
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/tv_itemActiveName_itemDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Soul Release"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:textStyle="bold"/>
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="#dedede"/>
         <TextView
             android:id="@+id/tv_itemActiveDetail_itemDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Isi Active"/>
+            android:layout_marginTop="4dp"
+            android:text="Isi Active"
+            android:textColor="#fff"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,30 +7,43 @@
     android:background="@color/flatabu"
     tools:context=".HeroDetailActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_heroDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:title="Hero Detail"
+        app:titleTextColor="#fff"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/lin_detailHero_heroDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/flatabu"
+        android:elevation="4dp"
         app:cardElevation="2dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_heroDetail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="4dp">
             <TextView
                 android:id="@+id/tv_heroName_heroDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="abaddon"
-                android:textSize="24sp"
-                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColor="#fff"
                 android:textStyle="bold"
                 android:textAllCaps="true"/>
             <ImageView
@@ -40,16 +53,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Stats"
                 android:textSize="16sp"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/tv_heroStat_heroDetail"
-                android:layout_width="match_parent"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:text="isi stats nya"
-                android:gravity="center"/>
+                android:textColor="#fff"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -57,7 +71,7 @@
         android:id="@+id/tablayout_heroDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18sp"
+        android:layout_marginTop="8dp"
         android:background="@color/flatabu"
         style="@style/ThemeTabLayout"
         app:layout_constraintTop_toBottomOf="@+id/lin_detailHero_heroDetail">

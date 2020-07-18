@@ -52,6 +52,7 @@ class ItemsActivity : AppCompatActivity(),ItemAdapter.ItemClickListener {
                     val dataItem = itemSnapshot.getValue(ItemModel::class.java)
                     dataItemList.add(dataItem!!)
                 }
+                println("memek => ${dataItemList}")
                 tampilDataKeRecyclerView(dataItemList)
             }
         })

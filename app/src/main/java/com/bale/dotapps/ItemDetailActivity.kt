@@ -22,6 +22,10 @@ class ItemDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item_detail)
 
+        setSupportActionBar(toolbar_itemDetail)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_close_24)
+
         itemsRef = Firebase.database.reference.child("items")
 
         getDataFromDatasbe()

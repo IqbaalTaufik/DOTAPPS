@@ -28,6 +28,10 @@ class HeroDetailActivity : AppCompatActivity(), SkillAdapter.ItemClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hero_detail)
 
+        setSupportActionBar(toolbar_heroDetail)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_close_24)
+
         db = Firebase.database.reference
         skillAdapter = SkillAdapter()
 

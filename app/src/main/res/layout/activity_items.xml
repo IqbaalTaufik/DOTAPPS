@@ -28,6 +28,7 @@
         android:id="@+id/bottNav_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/ThemeBottomNav"
         app:backgroundTint="@color/flatabu"
         app:menu="@menu/navigation"
         app:layout_constraintBottom_toBottomOf="parent"/>

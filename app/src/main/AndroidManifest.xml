@@ -10,20 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".sementara.AddHeroSkillActivity"></activity>
-        <activity android:name=".HeroDetailActivity" />
+        <activity android:name=".HeroDetailActivity"
+            android:parentActivityName=".HeroActivity"/>
         <activity android:name=".sementara.AddHeroActivity" />
         <activity android:name=".sementara.AddItemActivity" />
-        <activity android:name=".ItemDetailActivity" />
+        <activity android:name=".ItemDetailActivity"
+            android:parentActivityName=".ItemsActivity"/>
         <activity
-            android:name=".HeroActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:name=".HeroActivity" />
         <activity
-            android:name=".TipsTrickActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:name=".TipsTrickActivity"/>
         <activity android:name=".Splashscreen" />
         <activity
-            android:name=".ItemsActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:name=".ItemsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
