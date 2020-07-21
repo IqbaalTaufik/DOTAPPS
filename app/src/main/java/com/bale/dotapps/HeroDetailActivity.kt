@@ -102,9 +102,13 @@ class HeroDetailActivity : AppCompatActivity(), SkillAdapter.ItemClickListener {
     }
 
     private fun tampilSkillKeRecyView(skillList: List<SkillModel>,skillArraySize: Int){
+        var row = skillArraySize
+        if(row > 4){
+            row = 4
+        }
         skillAdapter.skillAdapter(skillList,this)
         rv_heroSkill_heroDetail.apply {
-            layoutManager = GridLayoutManager(this@HeroDetailActivity,skillArraySize)
+            layoutManager = GridLayoutManager(this@HeroDetailActivity,row)
             adapter = skillAdapter
         }
     }
