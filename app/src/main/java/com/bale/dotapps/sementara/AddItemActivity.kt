@@ -34,6 +34,7 @@ class AddItemActivity : AppCompatActivity() {
         val itemName = et_itemName.text.toString()
         val itemActiveName = et_itemActiveName.text.toString()
         val itemActiveDetail = et_itemActiveDetail.text.toString()
+        val itemIcon = et_itemImageDetail.toString()
 
         val itemID = UUID.randomUUID().toString()
         val itemsMap = HashMap<String,Any>()
@@ -42,7 +43,7 @@ class AddItemActivity : AppCompatActivity() {
         itemsMap.put("itemEffect",itemEffect)
         itemsMap.put("itemName",itemName)
         itemsMap.put("itemID",itemID)
-        itemsMap.put("itemIcon","")
+        itemsMap.put("itemIcon",itemIcon)
 
         val itemsActiveMap = HashMap<String,Any>()
         itemsActiveMap.put("activeDetail",itemActiveDetail)

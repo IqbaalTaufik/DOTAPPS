@@ -34,6 +34,12 @@
                 android:layout_height="wrap_content"
                 android:hint="Hero Lore"
                 android:layout_marginBottom="8dp"/>
+            <EditText
+                android:id="@+id/et_heroImage_addHero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hero image, kopi image url na kadieu"
+                android:layout_marginBottom="8dp"/>
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

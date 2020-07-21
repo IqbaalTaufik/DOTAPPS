@@ -49,6 +49,12 @@
                 android:layout_height="wrap_content"
                 android:hint="Item Active Detail"
                 app:layout_constraintTop_toBottomOf="@+id/et_itemActiveName"/>
+            <EditText
+                android:id="@+id/et_itemImageDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item image, kopi image urlna kadieu"
+                app:layout_constraintTop_toBottomOf="@+id/et_itemActiveName"/>
             <Button
                 android:id="@+id/btn_addItem"
                 android:layout_width="match_parent"

@@ -31,7 +31,7 @@ class AddHeroActivity : AppCompatActivity() {
         val heroName = et_heroName_addHero.text.toString()
         val heroStats = et_heroStats_addHero.text.toString()
         val heroLore = et_heroLore_addHero.text.toString()
-        val heroIcon = ""
+        val heroIcon = et_heroImage_addHero.text.toString()
 
         val heroes = HeroModel(heroID,heroName,heroStats,heroLore,heroIcon)
         db.child("heroes").child(heroID).setValue(heroes).addOnCompleteListener {
