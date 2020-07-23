@@ -34,7 +34,7 @@ class AddItemActivity : AppCompatActivity() {
         val itemName = et_itemName.text.toString()
         val itemActiveName = et_itemActiveName.text.toString()
         val itemActiveDetail = et_itemActiveDetail.text.toString()
-        val itemIcon = et_itemImageDetail.toString()
+        val itemIcon = et_itemImageDetail.text.toString()
 
         val itemID = UUID.randomUUID().toString()
         val itemsMap = HashMap<String,Any>()
