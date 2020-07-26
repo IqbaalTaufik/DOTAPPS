@@ -7,6 +7,30 @@
     android:background="@color/flatabu"
     tools:context=".Splashscreen">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_logo_splash"
+            android:layout_width="182dp"
+            android:layout_height="182dp"
+            android:background="@drawable/tango" />
+
+        <TextView
+            android:id="@+id/tv_namaApp_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dota Apps"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gontserrat"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
     <ProgressBar
         android:id="@+id/progres"
         android:layout_width="match_parent"
