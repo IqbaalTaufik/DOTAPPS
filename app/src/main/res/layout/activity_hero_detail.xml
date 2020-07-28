@@ -166,6 +166,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="tambah skill hero"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 
